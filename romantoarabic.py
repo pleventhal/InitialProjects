@@ -11,6 +11,7 @@ while True:
         break;
 
     number = 0
+    breakflag = 0
     level = len(array) - 1 #starts in the thousands and ends in ones
 
     while level >= 0 and len(numeral) > 0:
