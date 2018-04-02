@@ -15,6 +15,7 @@ while True:
 
     while level >= 0 and len(numeral) > 0:
         counter = len(array[level]) - 1  # iterates through each element in the level
+        levelcounter = 0
 
         while counter >= 0 and len(numeral) > 0:
 
@@ -25,6 +26,11 @@ while True:
             if len(numstring) > 0 and numstring == numeral[:len(numstring)]: #if we find the list element in the numeral
                 numeral = numeral[len(numstring):] #take the matched part out of the numeral
                 number = number + (counter * 10**level) #add the value of the matched part
+                levelcounter = levelcounter + 1
+
+                if levelcounter > 1:
+                    breakflag = 1
+
                 #print("Found it!")
 
             #else:
@@ -34,7 +40,7 @@ while True:
 
         level = level - 1 #move to the next level in the array
 
-    if len(numeral) > 0 or number == 0:
+    if len(numeral) > 0 or number == 0 or breakflag == 1:
         print("Not a Roman Numeral")
     else:
         print(number)
