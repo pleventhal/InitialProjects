@@ -1,4 +1,4 @@
-array = [['','I','II','III','IV','V','VI','VII','VIII','IV'],
+array = [['','I','II','III','IV','V','VI','VII','VIII','IX'],
 		 ['','X','XX','XXX','XL','L','LX','LXX','LXXX','LC'],
 		 ['','C','CC','CCC','CD','D','DC','DCC','DCCC','CM'],
 		 ['','M','MM','MMM']]
